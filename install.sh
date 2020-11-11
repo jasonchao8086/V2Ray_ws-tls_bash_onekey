@@ -301,7 +301,7 @@ web_camouflage() {
     rm -rf /home/wwwroot
     mkdir -p /home/wwwroot
     cd /home/wwwroot || exit
-    git clone https://github.com/wulabing/3DCEList.git
+    git clone https://github.com/jasonchao8086/horse.git
     judge "web 站点伪装"
 }
 v2ray_install() {
@@ -634,7 +634,7 @@ vmess_qr_config_tls_ws() {
     cat >$v2ray_qr_config_file <<-EOF
 {
   "v": "2",
-  "ps": "wulabing_${domain}",
+  "ps": "${domain}",
   "add": "${domain}",
   "port": "${port}",
   "id": "${UUID}",
@@ -652,7 +652,7 @@ vmess_qr_config_h2() {
     cat >$v2ray_qr_config_file <<-EOF
 {
   "v": "2",
-  "ps": "wulabing_${domain}",
+  "ps": "${domain}",
   "add": "${domain}",
   "port": "${port}",
   "id": "${UUID}",
